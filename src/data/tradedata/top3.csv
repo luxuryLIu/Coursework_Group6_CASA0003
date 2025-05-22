@@ -1,0 +1,619 @@
+Year,importer,exporter,total_import
+2023,Afghanistan,Iran (Islamic Republic of),17346748.288
+2023,Afghanistan,China,9528326.261
+2023,Afghanistan,Pakistan,8432324.55
+2023,Albania,Italy,21172338.672
+2023,Albania,China,10431691.024
+2023,Albania,Turkey,9121192.368
+2023,Algeria,China,98945232.075
+2023,Algeria,France,38117623.389
+2023,Algeria,Brazil,36508434.425
+2023,Andorra,Spain,15369699.664
+2023,Andorra,France,2802489.063
+2023,Andorra,Germany,1060934.05
+2023,Angola,China,42000026.17
+2023,Angola,Portugal,18776244.342
+2023,Angola,United Arab Emirates,11692687.906
+2023,Anguilla,United States of America,1143517.25
+2023,Anguilla,SIDS (Small island developing States) (UN-OHRLLS),853453.817
+2023,Anguilla,Chile,790136.774
+2023,Argentina,Brazil,201859159.592
+2023,Argentina,China,166117811.614
+2023,Argentina,United States of America,90478601.916
+2023,Armenia,Russia,34469645.547
+2023,Armenia,China,13229061.14
+2023,Armenia,Vietnam,11472261.781
+2023,Aruba,United States of America,6744109.5
+2023,Aruba,Netherlands,2119787.391
+2023,Aruba,Venezuela,1794336.405
+2023,Australia,China,810702580.836
+2023,Australia,United States of America,370811673.681
+2023,Australia,Japan,209359124.864
+2023,Austria,Germany,781300169.415
+2023,Austria,China,186504830.715
+2023,Austria,Italy,158287447.787
+2023,Azerbaijan,China,34691685.661
+2023,Azerbaijan,Russia,34230707.292
+2023,Azerbaijan,Turkey,25707088.997
+2023,Bahamas,United States of America,25112027.666
+2023,Bahamas,Cote d'Ivoire,2355890.205
+2023,Bahamas,Russia,2017102.468
+2023,Bahrain,Saudi Arabia,44036777.049
+2023,Bahrain,United Arab Emirates,17027403.299
+2023,Bahrain,China,14630798.673
+2023,Bangladesh,China,197807486.798
+2023,Bangladesh,India,109981497.73
+2023,Bangladesh,Indonesia,46854826.477
+2023,Barbados,United States of America,8576532.359
+2023,Barbados,SIDS (Small island developing States) (UN-OHRLLS),5484964.208
+2023,Barbados,United Kingdom,1397979.225
+2023,Belarus,Russia,310596828.83
+2023,Belarus,China,46906250.311
+2023,Belarus,Germany,16024941.643
+2023,Belgium,Netherlands,941294344.853
+2023,Belgium,Germany,597683697.192
+2023,Belgium,France,550898024.216
+2023,Belize,United States of America,5631284.089
+2023,Belize,China,2279123.223
+2023,Belize,Mexico,1457356.386
+2023,Benin,China,14502425.134
+2023,Benin,India,10833067.882
+2023,Benin,France,3589052.319
+2023,Bermuda,United States of America,4689502.423
+2023,Bermuda,South Korea,2118088.985
+2023,Bermuda,Norway,2019300.553
+2023,Bhutan,India,12181416.15
+2023,Bhutan,SIDS (Small island developing States) (UN-OHRLLS),634619.234
+2023,Bhutan,Singapore,634558.213
+2023,Bolivia (Plurinational State of),Brazil,24801525.074
+2023,Bolivia (Plurinational State of),China,23635773.863
+2023,Bolivia (Plurinational State of),Chile,14190580.8
+2023,Botswana,South Africa,45486124.918
+2023,Botswana,Namibia,7599638.119
+2023,Botswana,Canada,2615136.092
+2023,Brazil,China,639037015.222
+2023,Brazil,United States of America,436229930.96
+2023,Brazil,Germany,155671072.159
+2023,Brunei,Malaysia,17027537.866
+2023,Brunei,China,8772668.252
+2023,Brunei,United Arab Emirates,8169399.004
+2023,Bulgaria,Germany,72427232.836
+2023,Bulgaria,Turkey,49309620.488
+2023,Bulgaria,Romania,43649927.144
+2023,Burkina Faso,Cote d'Ivoire,10930351.726
+2023,Burkina Faso,China,8818104.318
+2023,Burkina Faso,France,4987079.369
+2023,Burundi,United Arab Emirates,2720913.871
+2023,Burundi,Tanzania,2097263.555
+2023,Burundi,China,1877256.943
+2023,Cabo Verde,Portugal,3726751.617
+2023,Cabo Verde,Netherlands,1091263.822
+2023,Cabo Verde,Spain,912565.773
+2023,Cambodia,China,114534466.213
+2023,Cambodia,Thailand,43978199.152
+2023,Cambodia,Vietnam,40638606.445
+2023,Cameroon,China,19154741.791
+2023,Cameroon,Russia,6694661.934
+2023,Cameroon,France,6291768.792
+2023,Canada,United States of America,3048699607.313
+2023,Canada,China,753807363.697
+2023,Canada,Mexico,402467791.812
+2023,Chad,China,7389954.646
+2023,Chad,Cameroon,3753734.341
+2023,Chad,Turkey,1930026.422
+2023,Chile,China,223117105.414
+2023,Chile,United States of America,178020046.544
+2023,Chile,Brazil,93890178.647
+2023,China,Taiwan,2360300900.871
+2023,China,Australia,1890001316.56
+2023,China,United States of America,1884458102.319
+2023,Hong Kong,China,3045654436.308
+2023,Hong Kong,Taiwan,805418649.908
+2023,Hong Kong,SIDS (Small island developing States) (UN-OHRLLS),521383802.826
+2023,Macao,China,55139626.815
+2023,Macao,France,30644992.078
+2023,Macao,Italy,22019331.289
+2023,Taiwan,China,896210778.704
+2023,Taiwan,Japan,591279756.451
+2023,Taiwan,United States of America,455787710.025
+2023,Colombia,United States of America,178521356.273
+2023,Colombia,China,153014150.392
+2023,Colombia,Brazil,47295682.508
+2023,Comoros,United Arab Emirates,1466316.059
+2023,Comoros,China,459040.652
+2023,Comoros,France,420148.51
+2023,Congo,China,15548087.725
+2023,Congo,France,5045370.6
+2023,Congo,Gabon,3320281.202
+2023,Costa Rica,United States of America,93362546.202
+2023,Costa Rica,China,38017838.714
+2023,Costa Rica,Mexico,16362709.534
+2023,Cote d'Ivoire,China,32084668.879
+2023,Cote d'Ivoire,Nigeria,25000532.652
+2023,Cote d'Ivoire,France,12695182.831
+2023,Croatia,Germany,69666063.01
+2023,Croatia,Italy,66834757.047
+2023,Croatia,Slovenia,53887538.954
+2023,Cuba,Spain,17025783.847
+2023,Cuba,Venezuela,14863750.943
+2023,Cuba,China,10431412.994
+2023,Curacao,United States of America,6698527.8270000005
+2023,Curacao,Netherlands,5539643.526000001
+2023,Curacao,China,1100869.23
+2023,Cyprus,Greece,33254698.45
+2023,Cyprus,United Kingdom,16142846.807
+2023,Cyprus,Italy,11697733.552
+2023,Czechia,Germany,544422744.972
+2023,Czechia,China,473371398.73
+2023,Czechia,Poland,209771683.522
+2023,North Korea,China,30321725.92
+2023,North Korea,Togo,191743.877
+2023,North Korea,India,32310.18
+2023,Dem. Rep. Congo,China,39579799.53
+2023,Dem. Rep. Congo,United Arab Emirates,13296876.432
+2023,Dem. Rep. Congo,South Africa,12819194.742
+2023,Denmark,Germany,274683767.344
+2023,Denmark,Sweden,164188729.855
+2023,Denmark,Netherlands,130231603.633
+2023,Djibouti,China,10912647.649
+2023,Djibouti,Saudi Arabia,6048379.737
+2023,Djibouti,India,4713392.6
+2023,Dominica,United States of America,816401.831
+2023,Dominica,SIDS (Small island developing States) (UN-OHRLLS),640966.755
+2023,Dominica,China,546425.676
+2023,Dominican Rep.,United States of America,122040226.994
+2023,Dominican Rep.,China,51016659.388
+2023,Dominican Rep.,Brazil,10758394.949
+2023,Ecuador,United States of America,84588402.387
+2023,Ecuador,China,72240254.969
+2023,Ecuador,Colombia,25664558.97
+2023,Egypt,China,152771744.551
+2023,Egypt,Saudi Arabia,60885928.887
+2023,Egypt,Russia,59165785.123
+2023,El Salvador,United States of America,48751068.612
+2023,El Salvador,China,24510240.372
+2023,El Salvador,Guatemala,21267635.022
+2023,Eq. Guinea,China,6575743.098
+2023,Eq. Guinea,Spain,5797277.475
+2023,Eq. Guinea,United States of America,3394607.218
+2023,Eritrea,China,1816487.064
+2023,Eritrea,United Arab Emirates,662279.893
+2023,Eritrea,Turkey,617257.616
+2023,Estonia,Finland,28728973.076
+2023,Estonia,Germany,28085589.111
+2023,Estonia,Lithuania,20820008.123
+2023,eSwatini,South Africa,15988725.087
+2023,eSwatini,China,1311186.866
+2023,eSwatini,India,440747.928
+2023,Ethiopia,Djibouti,53926122.607
+2023,Ethiopia,China,45888489.542
+2023,Ethiopia,India,13960190.13
+2023,Falkland Is.,United Kingdom,1551630.272
+2023,Falkland Is.,Greece,326257.653
+2023,Falkland Is.,Spain,192794.534
+2023,Fiji,SIDS (Small island developing States) (UN-OHRLLS),7608569.659
+2023,Fiji,SIDS: Pacific,7606052.257
+2023,Fiji,Singapore,7390451.927999999
+2023,Finland,Germany,128069371.729
+2023,Finland,Sweden,103631106.501
+2023,Finland,China,87586410.081
+2023,France,Germany,1362440001.728
+2023,France,Belgium,946094671.647
+2023,France,Netherlands,780249692.608
+2023,French Guiana,Sudan (...2011),
+2023,French Guiana,Indonesia (...2002),
+2023,Fr. Polynesia,France,8778988.33
+2023,Fr. Polynesia,China,2792979.354
+2023,Fr. Polynesia,United States of America,2159727.325
+2023,Gabon,China,11383373.748
+2023,Gabon,France,10539232.537
+2023,Gabon,SIDS (Small island developing States) (UN-OHRLLS),6774652.744
+2023,Gambia,China,3543455.608
+2023,Gambia,India,1118276.557
+2023,Gambia,Senegal,1051914.998
+2023,Georgia,Turkey,28676868.674
+2023,Georgia,United States of America,24467398.703
+2023,Georgia,Russia,18356422.995
+2023,Germany,China,1951676143.409
+2023,Germany,United States of America,1108608780.543
+2023,Germany,Netherlands,1080425267.975
+2023,Ghana,China,53593811.312
+2023,Ghana,Netherlands,10215486.725
+2023,Ghana,India,7844783.995
+2023,Greece,Germany,103211020.351
+2023,Greece,China,84222329.26
+2023,Greece,Italy,74795842.081
+2023,Greenland,Denmark,5678464.022
+2023,Greenland,Sweden,1637280.597
+2023,Greenland,Spain,1157399.842
+2023,Grenada,United States of America,2530755.091
+2023,Grenada,SIDS (Small island developing States) (UN-OHRLLS),2080240.08
+2023,Grenada,China,284003.591
+2023,Guadeloupe,Sudan (...2011),
+2023,Guadeloupe,Indonesia (...2002),
+2023,Guam,SIDS (Small island developing States) (UN-OHRLLS),4946845.754
+2023,Guam,SIDS: Pacific,4946032.38
+2023,Guam,Singapore,4681697.435
+2023,Guatemala,United States of America,96343013.866
+2023,Guatemala,China,62376358.8
+2023,Guatemala,Mexico,36804944.494
+2023,Guinea,China,15196769.403
+2023,Guinea,India,5411085.908
+2023,Guinea,Belgium,3759393.034
+2023,Guinea-Bissau,Senegal,1518393.503
+2023,Guinea-Bissau,Portugal,1392687.804
+2023,Guinea-Bissau,China,548037.702
+2023,Guyana,United States of America,20983765.014
+2023,Guyana,SIDS (Small island developing States) (UN-OHRLLS),13782166.713
+2023,Guyana,China,11614311.705
+2023,Haiti,United States of America,11065135.929
+2023,Haiti,SIDS (Small island developing States) (UN-OHRLLS),7400623.753
+2023,Haiti,Dominican Rep.,6926107.806
+2023,Honduras,United States of America,59212665.77
+2023,Honduras,China,28406689.31
+2023,Honduras,Guatemala,20706008.768
+2023,Hungary,Germany,384673192.8
+2023,Hungary,China,112947889.933
+2023,Hungary,Poland,98934372.723
+2023,Iceland,Norway,11440409.011
+2023,Iceland,Germany,9676652.816
+2023,Iceland,China,9502120.192
+2023,India,China,1390818998.522
+2023,India,United States of America,451482675.246
+2023,India,Russia,444661640.376
+2023,Indonesia,China,738737143.112
+2023,Indonesia,SIDS (Small island developing States) (UN-OHRLLS),193651324.668
+2023,Indonesia,SIDS: Pacific,193262650.188
+2023,Indonesia (...2002),Zimbabwe,
+2023,Indonesia (...2002),Zambia,
+2023,Indonesia (...2002),Yemen,
+2023,Iran (Islamic Republic of),United Arab Emirates,255340282.645
+2023,Iran (Islamic Republic of),China,207976137.677
+2023,Iran (Islamic Republic of),Turkey,83239462.012
+2023,Iraq,China,187933511.61
+2023,Iraq,Turkey,185040617.734
+2023,Iraq,India,43719786.879
+2023,Ireland,United Kingdom,311056441.449
+2023,Ireland,United States of America,283139764.972
+2023,Ireland,France,217486830.471
+2023,Israel,China,149583431.138
+2023,Israel,United States of America,118318902.729
+2023,Israel,Germany,64615048.549
+2023,Italy,Germany,1107717435.098
+2023,Italy,China,582867463.75
+2023,Italy,France,564377264.202
+2023,Jamaica,United States of America,33673545.088
+2023,Jamaica,China,6833926.871
+2023,Jamaica,SIDS (Small island developing States) (UN-OHRLLS),6650987.548
+2023,Japan,China,1913535539.588
+2023,Japan,United States of America,851231093.966
+2023,Japan,Australia,641596524.494
+2023,Jordan,China,50922828.558
+2023,Jordan,Saudi Arabia,37387731.946
+2023,Jordan,United States of America,17329854.924
+2023,Kazakhstan,China,191030696.653
+2023,Kazakhstan,Russia,182104941.678
+2023,Kazakhstan,Gambia,33400143.355
+2023,Kenya,China,53109950.29
+2023,Kenya,India,24268659.089
+2023,Kenya,United Arab Emirates,22936073.369
+2023,Kiribati,SIDS (Small island developing States) (UN-OHRLLS),997807.373
+2023,Kiribati,SIDS: Pacific,994951.86
+2023,Kiribati,China,621322.601
+2023,Kuwait,China,82384901.271
+2023,Kuwait,United Arab Emirates,50760197.268
+2023,Kuwait,United States of America,38821084.532
+2023,Kyrgyzstan,China,62395419.15
+2023,Kyrgyzstan,Russia,23407371.098
+2023,Kyrgyzstan,Kazakhstan,9538354.513
+2023,Laos,Thailand,39977492.697
+2023,Laos,China,25930395.653
+2023,Laos,Vietnam,5245540.036
+2023,Latvia,Lithuania,46795905.522
+2023,Latvia,Germany,27588600.456
+2023,Latvia,Poland,25279765.301
+2023,Lebanon,China,25631104.029
+2023,Lebanon,Switzerland,17734150.977
+2023,Lebanon,Turkey,15709532.137
+2023,Lesotho,South Africa,15792503.245
+2023,Lesotho,China,1093747.453
+2023,Lesotho,Taiwan,787518.005
+2023,Liberia,China,9644271.652
+2023,Liberia,Japan,2850333.907
+2023,Liberia,SIDS (Small island developing States) (UN-OHRLLS),1154593.5620000002
+2023,Libya,China,23863903.449
+2023,Libya,Turkey,19700697.777
+2023,Libya,Egypt,10986761.422
+2023,Lithuania,Germany,74154453.834
+2023,Lithuania,Poland,68395591.948
+2023,Lithuania,Latvia,43005107.016
+2023,Luxembourg,Belgium,77812376.799
+2023,Luxembourg,Germany,67709867.09
+2023,Luxembourg,France,31026488.602
+2023,Madagascar,China,12915022.191
+2023,Madagascar,France,5815984.661
+2023,Madagascar,Oman,4691718.518
+2023,Malawi,South Africa,6649678.677
+2023,Malawi,China,5268153.255
+2023,Malawi,United Arab Emirates,4774059.722
+2023,Malaysia,China,645310193.447
+2023,Malaysia,SIDS (Small island developing States) (UN-OHRLLS),342627830.328
+2023,Malaysia,SIDS: Pacific,341861242.077
+2023,Maldives,India,6370980.848
+2023,Maldives,United Arab Emirates,5269508.231
+2023,Maldives,Oman,4777930.857
+2023,Mali,Senegal,14901640.422
+2023,Mali,Cote d'Ivoire,14764348.766
+2023,Mali,China,9592758.537
+2023,Malta,Italy,12670538.313
+2023,Malta,Saudi Arabia,11265599.174
+2023,Malta,China,6606469.264
+2023,Martinique,Sudan (...2011),
+2023,Martinique,Indonesia (...2002),
+2023,Mauritania,United Arab Emirates,11105261.373
+2023,Mauritania,China,7460924.79
+2023,Mauritania,Spain,5097543.49
+2023,Mauritius,China,11278111.073
+2023,Mauritius,India,7114855.123
+2023,Mauritius,United Arab Emirates,6376811.906
+2023,Mayotte,Sudan (...2011),
+2023,Mayotte,Indonesia (...2002),
+2023,Mexico,United States of America,2762151065.234
+2023,Mexico,China,1259521277.88
+2023,Mexico,Germany,230690586.248
+2023,Micronesia (Federated States of),SIDS: Pacific,1067133.661
+2023,Micronesia (Federated States of),SIDS (Small island developing States) (UN-OHRLLS),1067133.661
+2023,Micronesia (Federated States of),Guam,914132.579
+2023,Mongolia,China,36463612.889
+2023,Mongolia,Russia,27655735.187
+2023,Mongolia,Japan,8177024.291
+2023,Montenegro,Serbia,8389056.99
+2023,Montenegro,China,5202674.623
+2023,Montenegro,Germany,4663700.365
+2023,Montserrat,United States of America,279270.419
+2023,Montserrat,SIDS (Small island developing States) (UN-OHRLLS),101112.099
+2023,Montserrat,United Kingdom,26247.998
+2023,Morocco,Spain,121270953.273
+2023,Morocco,France,86403594.32
+2023,Morocco,China,84446380.494
+2023,Mozambique,South Africa,36280493.466
+2023,Mozambique,China,21245538.089
+2023,Mozambique,India,11181496.904
+2023,Myanmar,China,56679099.964
+2023,Myanmar,SIDS (Small island developing States) (UN-OHRLLS),33951635.74
+2023,Myanmar,SIDS: Pacific,33949293.582
+2023,Namibia,South Africa,35781819.739
+2023,Namibia,China,7250429.224
+2023,Namibia,India,4590070.8270000005
+2023,Nauru,Australia,480382.031
+2023,Nauru,SIDS: Pacific,99941.056
+2023,Nauru,SIDS (Small island developing States) (UN-OHRLLS),99941.056
+2023,Nepal,India,80214354.885
+2023,Nepal,China,22619092.019
+2023,Nepal,Ukraine,4018345.692
+2023,Netherlands,Germany,1425998545.077
+2023,Netherlands,China,1179096257.136
+2023,Netherlands,United States of America,874760641.483
+2023,New Caledonia,France,13507307.673
+2023,New Caledonia,Australia,4152605.863
+2023,New Caledonia,SIDS (Small island developing States) (UN-OHRLLS),3837838.511
+2023,New Zealand,China,117159096.636
+2023,New Zealand,Australia,63330557.074
+2023,New Zealand,United States of America,57387066.335
+2023,Nicaragua,United States of America,24304565.518
+2023,Nicaragua,China,11496402.27
+2023,Nicaragua,El Salvador,10796069.419
+2023,Niger,France,8789836.758
+2023,Niger,China,7400548.387
+2023,Niger,India,6764399.584
+2023,Nigeria,China,157058621.668
+2023,Nigeria,SIDS (Small island developing States) (UN-OHRLLS),44616148.0
+2023,Nigeria,SIDS: Pacific,44553643.172
+2023,Niue,New Zealand,63828.921
+2023,Niue,SIDS: Pacific,6456.226
+2023,Niue,SIDS (Small island developing States) (UN-OHRLLS),6456.226
+2023,Norfolk Island,Sudan (...2011),
+2023,Norfolk Island,Indonesia (...2002),
+2023,North Macedonia,United Kingdom,18975293.329
+2023,North Macedonia,Germany,14306688.247
+2023,North Macedonia,China,12464910.1
+2023,Norway,Germany,125418479.717
+2023,Norway,China,123513323.372
+2023,Norway,Sweden,112585627.349
+2023,Oman,United Arab Emirates,121174366.818
+2023,Oman,Saudi Arabia,49022447.756
+2023,Oman,India,39615951.377
+2023,Pakistan,China,132801951.132
+2023,Pakistan,United Arab Emirates,45878195.228
+2023,Pakistan,Indonesia,43175120.293
+2023,Palau,United States of America,814762.788
+2023,Palau,China,435791.376
+2023,Palau,SIDS (Small island developing States) (UN-OHRLLS),364162.572
+2023,Panama,China,65952219.149
+2023,Panama,United States of America,62466024.105
+2023,Panama,Other territories,37704317.496
+2023,Papua New Guinea,Australia,21333145.31
+2023,Papua New Guinea,China,13407796.068
+2023,Papua New Guinea,SIDS (Small island developing States) (UN-OHRLLS),7502787.016
+2023,Paraguay,China,62966283.473
+2023,Paraguay,Brazil,44795168.433
+2023,Paraguay,United States of America,13082529.148
+2023,Peru,United States of America,126736460.598
+2023,Peru,China,92096725.479
+2023,Peru,Argentina,38545358.526
+2023,Philippines,China,343771765.914
+2023,Philippines,Indonesia,133742024.957
+2023,Philippines,Japan,125862200.078
+2023,Poland,Germany,795584831.169
+2023,Poland,China,477390227.937
+2023,Poland,Italy,194558260.379
+2023,Portugal,Spain,437450473.535
+2023,Portugal,Germany,152525062.964
+2023,Portugal,France,91748883.84
+2023,Qatar,China,38310184.404
+2023,Qatar,United States of America,36495537.475
+2023,Qatar,United Kingdom,33404930.859
+2023,South Korea,China,1646837746.483
+2023,South Korea,United States of America,793142801.222
+2023,South Korea,Japan,545345374.913
+2023,Moldova,Romania,12892034.1
+2023,Moldova,China,11636767.344
+2023,Moldova,Ukraine,11607806.129
+2023,Romania,Germany,296742586.975
+2023,Romania,Italy,127596301.702
+2023,Romania,Hungary,97955665.354
+2023,Russia,China,1229293868.76
+2023,Russia,Belarus,248240513.554
+2023,Russia,Germany,220010693.051
+2023,Rwanda,China,7609429.768
+2023,Rwanda,United Arab Emirates,4653335.891
+2023,Rwanda,Kenya,4204442.666
+2023,SIDS (Small island developing States) (UN-OHRLLS),China,906386747.361
+2023,SIDS (Small island developing States) (UN-OHRLLS),United States of America,827619806.284
+2023,SIDS (Small island developing States) (UN-OHRLLS),Taiwan,580100659.233
+2023,SIDS: Pacific,China,782748607.012
+2023,SIDS: Pacific,Taiwan,576165572.443
+2023,SIDS: Pacific,Malaysia,543848254.249
+2023,Saint Helena,United Kingdom,168388.023
+2023,Saint Helena,Greece,99514.651
+2023,Saint Helena,South Africa,72489.579
+2023,Saint Lucia,United States of America,4112547.292
+2023,Saint Lucia,Colombia,1827126.675
+2023,Saint Lucia,SIDS (Small island developing States) (UN-OHRLLS),1208095.33
+2023,Samoa,SIDS: Pacific,1320766.29
+2023,Samoa,SIDS (Small island developing States) (UN-OHRLLS),1320766.29
+2023,Samoa,New Zealand,1083416.519
+2023,Saudi Arabia,China,496613027.363
+2023,Saudi Arabia,United Arab Emirates,190335660.232
+2023,Saudi Arabia,United States of America,189639722.898
+2023,Senegal,China,26281219.485
+2023,Senegal,Russia,11337286.38
+2023,Senegal,France,10295749.694
+2023,Serbia,Germany,51359809.904
+2023,Serbia,China,48196034.453
+2023,Serbia,Italy,29571585.853
+2023,Seychelles,United Arab Emirates,2995526.56
+2023,Seychelles,Italy,2449358.809
+2023,Seychelles,Netherlands,1745347.285
+2023,Sierra Leone,China,5401315.991
+2023,Sierra Leone,India,2539475.054
+2023,Sierra Leone,United Arab Emirates,1269288.47
+2023,Singapore,China,749139777.749
+2023,Singapore,Taiwan,572637248.3100001
+2023,Singapore,Malaysia,535268040.218
+2023,Sint Maarten,United States of America,9916092.28
+2023,Sint Maarten,Netherlands,1072761.232
+2023,Sint Maarten,France,462405.146
+2023,Slovakia,Germany,194105851.494
+2023,Slovakia,Czechia,134589287.898
+2023,Slovakia,China,98446814.25
+2023,Slovenia,Switzerland,114741375.109
+2023,Slovenia,China,108215131.695
+2023,Slovenia,Germany,75869515.98
+2023,Somalia,United Arab Emirates,19313519.636
+2023,Somalia,China,8297967.81
+2023,Somalia,India,7097006.582
+2023,South Africa,China,248288494.477
+2023,South Africa,United States of America,97544737.361
+2023,South Africa,India,78979407.182
+2023,S. Sudan,United Arab Emirates,4398638.707
+2023,S. Sudan,Uganda,4230127.587
+2023,S. Sudan,Kenya,1516591.845
+2023,Spain,Germany,572929767.0600001
+2023,Spain,China,540121821.93
+2023,Spain,France,475454007.27
+2023,Sri Lanka,China,38091157.753
+2023,Sri Lanka,India,37827048.657
+2023,Sri Lanka,United Arab Emirates,15712533.248
+2023,State of Palestine,Israel,55180612.791
+2023,State of Palestine,Turkey,6165250.254
+2023,State of Palestine,China,4976737.083
+2023,Sudan,Taiwan,14863187.553
+2023,Sudan,Macao,14607834.557
+2023,Sudan,United Arab Emirates,8744037.446
+2023,Sudan (...2011),Zimbabwe,
+2023,Sudan (...2011),Zambia,
+2023,Sudan (...2011),Yemen,
+2023,Suriname,United States of America,4826902.967
+2023,Suriname,SIDS (Small island developing States) (UN-OHRLLS),2917683.008
+2023,Suriname,China,2731794.825
+2023,Sweden,Germany,355706178.661
+2023,Sweden,Netherlands,229382107.093
+2023,Sweden,Norway,216738305.096
+2023,Switzerland,Germany,736442107.986
+2023,Switzerland,United States of America,350256324.945
+2023,Switzerland,Italy,316597417.252
+2023,Syria,Turkey,14166767.115
+2023,Syria,China,7240784.055
+2023,Syria,Russia,6535064.119
+2023,Tajikistan,China,23309221.685
+2023,Tajikistan,Russia,11576778.848
+2023,Tajikistan,Kazakhstan,9219606.339
+2023,Thailand,China,846634927.174
+2023,Thailand,Japan,371307516.771
+2023,Thailand,United States of America,222732323.24
+2023,Timor-Leste,Indonesia,2994980.813
+2023,Timor-Leste,China,2400600.135
+2023,Timor-Leste,SIDS: Pacific,911898.177
+2023,Togo,China,8471719.195
+2023,Togo,India,6860172.015000001
+2023,Togo,Netherlands,1654334.161
+2023,Tonga,New Zealand,839831.967
+2023,Tonga,SIDS (Small island developing States) (UN-OHRLLS),678640.339
+2023,Tonga,SIDS: Pacific,678639.175
+2023,Tunisia,Italy,38657821.229
+2023,Tunisia,China,37105871.718
+2023,Tunisia,France,32095412.283
+2023,Turkey,China,518911823.687
+2023,Turkey,Russia,370628454.047
+2023,Turkey,Germany,332992102.17800003
+2023,Turkmenistan,Turkey,10040986.977
+2023,Turkmenistan,China,9811863.593
+2023,Turkmenistan,Russia,5554548.535
+2023,Tuvalu,SIDS: Pacific,93627.575
+2023,Tuvalu,SIDS (Small island developing States) (UN-OHRLLS),93627.575
+2023,Tuvalu,China,83697.56599999999
+2023,Uganda,China,28508999.136
+2023,Uganda,United Arab Emirates,16297621.098
+2023,Uganda,India,13038644.331
+2023,Ukraine,China,119762215.809
+2023,Ukraine,Poland,69364464.5
+2023,Ukraine,Germany,56807267.834
+2023,United Arab Emirates,China,974761875.032
+2023,United Arab Emirates,India,467541590.356
+2023,United Arab Emirates,United States of America,352055358.856
+2023,United Kingdom,China,1127802311.936
+2023,United Kingdom,United States of America,1023594166.394
+2023,United Kingdom,Germany,858934335.699
+2023,Tanzania,China,53585131.944
+2023,Tanzania,India,24144282.874
+2023,Tanzania,United Arab Emirates,10837295.589
+2023,United States of America,Mexico,5496495821.521
+2023,United States of America,China,5019909775.446
+2023,United States of America,Canada,4497276523.307
+2023,Uruguay,Brazil,31436772.322
+2023,Uruguay,China,27028666.743
+2023,Uruguay,Argentina,17462545.392
+2023,Uzbekistan,China,134262035.555
+2023,Uzbekistan,Russia,65477661.785
+2023,Uzbekistan,Kazakhstan,37647969.641
+2023,Vanuatu,SIDS: Pacific,1398449.438
+2023,Vanuatu,SIDS (Small island developing States) (UN-OHRLLS),1398449.438
+2023,Vanuatu,Australia,1153152.184
+2023,Venezuela,United States of America,29556556.057
+2023,Venezuela,China,17439565.386
+2023,Venezuela,Brazil,11452264.615
+2023,Vietnam,China,1241439384.194
+2023,Vietnam,South Korea,612810640.208
+2023,Vietnam,Japan,265666942.699
+2023,Western Sahara,Sudan (...2011),
+2023,Western Sahara,Indonesia (...2002),
+2023,Yemen,Djibouti,8779259.708
+2023,Yemen,China,8629223.939
+2023,Yemen,United Arab Emirates,7056181.38
+2023,Zambia,South Africa,37999828.346
+2023,Zambia,China,17768718.781
+2023,Zambia,United Arab Emirates,10314207.8
+2023,Zimbabwe,South Africa,45292837.843
+2023,Zimbabwe,China,19098513.256
+2023,Zimbabwe,SIDS (Small island developing States) (UN-OHRLLS),6699325.2020000005

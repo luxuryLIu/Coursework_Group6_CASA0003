@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Trade Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <!-- Hero Section: Background video with overlay title and description -->
+
+  <section class="hero-section">
+    <div class="hero-bg-video">
+      <video src="video.mp4" autoplay muted loop playsinline
+        style="width:100vw; height:100vh; position:absolute; top:0; left:0; transform: scale(1.2);pointer-events:none; z-index:1;">
+      </video>
+    </div>
+    <div class="hero-overlay">
+      <h1 class="hero-title">Who Trades with Whom? </h1>
+      <p class="hero-desc">A Visual Journey Through Global Commerce</p>
+      <p class="fixed-paragraph">
+        Trade plays a central role in shaping global economic structures by fostering employment, attracting investment,
+        and improving living standards; sustaining these outcomes requires continuous adaptation of trade practices
+        (Ernst & Young, n.d.). The purpose of this project is to explore trade flows between economies and the impact of
+        the Covid-19 Epidemic on global trade and countries' GDP. This visualisation project aims to visualise the
+        structure of global trade, the flow of imports and exports across countries, the composition of intra- and
+        extra-regional trade, and the state of economic growth and shared prosperity globally and across countries.
+      </p>
+      <a href="#section-map" class="hero-scroll">↓ Scroll Down</a>
+    </div>
+  </section>
+
+  <nav class="main-navbar">
+    <ul>
+      <li><a href="#section-map">Global Trade Network</a></li>
+      <li><a href="#section-export-structure">Structure of Trade</a></li>
+      <li><a href="#section-gdp-summary">Impact of Covid-19 </a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#references-wrapper">Reference</a></li>
+    </ul>
+  </nav>
+
+  <div id="section-map">
+    <div class="title-row1">
+      <span class="blue-arrow"></span>
+      <h1 id="trade-title">
+        The world’s largest bilateral flows of merchandise trade run between China and the United States of America
+      </h1>
+    </div>
+    <div class="map-container" id="trade-map">
+      <div class="title-row">
+
+        <h2 id="main-title">Main world import flows, billions of dollars, 2023</h2>
+        <div id="country-panel">
+          <h3>Selected countries</h3>
+          <ul id="selected-countries"></ul>
+        </div>
+      </div>
+      <div id="map">
+        <div class="arrow-legend">
+          <div class="legend-box">
+            <div class="legend-row">
+              <svg width="32" height="8">
+                <path d="M0,4 Q16,-2 32,4 Q16,10 0,4Z" fill="orange" stroke="orange" stroke-width="0.5" />
+              </svg>
+              <span>Top 3 import connections</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="section-china-us-trade" class="blue-box">
+        <h3>Current State of China-U.S. Trade</h3>
+        <p>The largest bilateral trade in the world occurs between China and the United States, as well as between their
+          neighboring economies.</p>
+        <p>In 2023, the United States imported goods worth $448 billion from China, a decrease of 20% compared to 2022;
+          China imported $50 billion worth of goods from the United States, nearly a 10% decrease compared to 2022.</p>
+      </section>
+    </div>
+  </div>
+
+  <div id="section-explorer">
+    <h2 class="section-title">🌍 Global Trade Explorer - 2023</h2>
+    <div class="filters">
+      <label for="importerSelect">Select the Importer country:</label>
+      <select id="importerSelect" multiple style="width:300px;"></select>
+    </div>
+    <div class="summary" id="summaryBox">Showing 0 records</div>
+    <canvas id="barChart"></canvas>
+    <button id="toggleChartBtn">⬇︎ Show Chart</button>
+    <div id="chartContainer" style="display: none;">
+      <table id="dataTable" class="display" style="width:80%">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Importer</th>
+            <th>Exporter</th>
+            <th>Total Import</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <p class="source">
+      Source: <a href="https://unctadstat.unctad.org/" target="_blank">UNCTADstat</a>
+    </p>
+    <hr class="section-divider" />
+  </div>
+
+  <div id="section-export-structure">
+    <div class="title-row1">
+      <span class="blue-arrow"></span>
+      <h2>Top 5 Export Destinations by Developing Economies (2019–2023)</h2>
+    </div>
+    <div class="year-select-wrapper">
+      <label for="yearSelect" class="year-label">Select year:</label>
+      <select id="yearSelect"></select>
+    </div>
+
+    <div class="layout">
+      <div class="chart-group">
+        <div class="chart-block">
+          <h3>Developing economies: Africa</h3>
+          <canvas id="chartAfrica"></canvas>
+        </div>
+        <div class="chart-block">
+          <h3>Developing economies: Asia</h3>
+          <canvas id="chartAsia"></canvas>
+        </div>
+        <div class="chart-block">
+          <h3>Developing economies: Americas</h3>
+          <canvas id="chartAmericas"></canvas>
+        </div>
+      </div>
+      <div class="export-container">
+        <div class="Export-word1">
+          <h4>Export Destination Insights (2019–2023)</h4>
+          <p>
+            Between 2019 and 2023, the United States consistently served as the primary export destination for
+            developing economies in both Asia and the Americas, with China occupying the second position in each
+            region. In contrast, China was the leading export market for developing economies in Africa, surpassing
+            all other partners.
+          </p>
+        </div>
+
+        <div class="Export-word2">
+          <p>
+            Beyond these dominant destinations, several other countries maintained significant positions. For
+            developing economies in Asia, key export markets included Japan, India, and Hong Kong SAR. Developing
+            economies in Africa also exported considerable volumes to Italy, France, the United Arab Emirates, and
+            Spain. In the Americas, developing economies regularly exported to Canada, Brazil, and the Netherlands,
+            which consistently ranked among their top destinations.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="section-regional-exports">
+    <div class="title-row1">
+      <span class="blue-arrow"></span>
+      <h2>Continental Export Composition: Intra vs Extra (2019–2023)</h2>
+    </div>
+    <p class="subtitle">Each bar shows the percentage of exports within vs outside the region.</p>
+    <div class="year-select-wrapper">
+      <label for="yearSelect" class="year-label">Select year:</label>
+      <select id="regionalYearSelect"></select>
+    </div>
+    <div class="exports-layout">
+      <canvas id="exportsChart"></canvas>
+      <div class="info-box1">
+        <h3>Key Insights (2019–2023)</h3>
+        <ul>
+          Asia and Europe had over 50% of their exports within their own regions,
+          reflecting strong intra-regional trade. In contrast, Africa, Oceania, Northern America,
+          and Latin America and the Caribbean exported mostly outside their regions.
+          This suggests deeper economic integration in Asia and Europe. Meanwhile, other continents remain more
+          outward-looking in trade.
+        </ul>
+      </div>
+    </div>
+    <div class="source">
+      Source: <a href="https://unctadstat.unctad.org/" target="_blank">UNCTADstat</a>
+    </div>
+    <hr class="section-divider" />
+  </div>
+
+  <div id="section-gdp-summary">
+    <div class="title-row1">
+      <span class="blue-arrow"></span>
+      <h2>The Damage Down</h2>
+    </div>
+    <div class="gdp-summary-content">
+      <div class="gdp-summary-left">
+        <div class="gdp-summary-label">Global GDP Growth</div>
+        <div class="gdp-summary-value">-3.1%</div>
+        <div class="gdp-summary-year">IN 2020</div>
+      </div>
+
+      <div class="gdp-summary-right">
+        The global economy had been growing at a steady pace since 2010, but this trend abruptly reversed in 2020.
+        It
+        was the worst economic decline in decades. Gross Domestic Product (GDP) dropped 3.1 percent in 2020 – more
+        than
+        twice the contraction seen in 2009 following the global financial crisis.
+      </div>
+    </div>
+
+    <div id="gdp-bar-chart-container">
+      <h3>Compare GDP Level with Pre-COVID Projections</h3>
+      <div id="gdp-bar-chart"></div>
+    </div>
+
+    <p class="source">
+      Source: <a href=" https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.Z" target="_blank">World Development
+        Indicators</a>
+    </p>
+    <hr class="section-divider" />
+  </div>
+
+  <div class="section-card">
+    <div class="title-row1">
+      <span class="blue-arrow"></span>
+      <h2>Compare GDP Levels of Selected Countries</h2>
+    </div>
+    <div class="inequality-analysis">
+      <p>Explore the economic impact of the COVID-19 pandemic on GDP across several countries:</p>
+    </div>
+    <svg id="grouped-chart"></svg>
+  </div>
+
+  <div id="section-gdp-projection">
+    <div class="title-row1">
+      <span class="blue-arrow"></span>
+      <h2>
+        Compare GDP Level with Pre-COVID Projections
+      </h2>
+    </div>
+    <div class="inequality-analysis">
+      <p>
+        To showcase the economic impact of the COVID-19 pandemic on countries' Gross Domestic Product (GDP),
+        you can use <strong>the dropdown menu</strong> to quickly compare
+        <strong>the economic recovery <em>performance</em> of different countries</strong>
+        during and after the pandemic.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 10px; text-align: center; ">
+      <p class="subtitle">Level of GDP compared to pre-COVID projections (value for 2019 = 100)</p>
+      <label for="country" style="font-weight: bold;">Choose a country:</label>
+      <select id="country">
+        <option value="">Select a country</option>
+      </select>
+    </div>
+    <svg id="chart" width="800" height="350"></svg>
+    <div class="tooltip" id="tooltip"></div>
+
+    <p class="source">
+      Source:
+      <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD" target="_blank">
+        World Development Indicators
+      </a>
+    </p>
+    <hr class="section-divider" />
+  </div>
+
+  <div id="sharedprosperity">
+    <div class="title-row1">
+      <span class="blue-arrow"></span>
+      <h2>
+        Countries differ in how well prosperity is shared
+      </h2>
+    </div>
+    <div class="inequality-analysis">
+      <p>
+        Which countries already exhibited <strong>inequality</strong> before the pandemic through a series of
+        charts.
+        An indicator of economic inequality is the <strong>Shared Prosperity Premium</strong> (Ferreira et al.,
+        2018).
+        <strong>Data from 2012–2017</strong> suggests that if the income growth of the poorest 40% of the population
+        fell behind overall growth, then <strong>COVID-19 may have further exacerbated this inequality</strong>
+        (Marmot & Allen, 2020). This is because low-income groups are more vulnerable to economic shocks, such as
+        job
+        losses
+        or income reductions. Among the countries studied, <strong>90</strong> had sufficient data to calculate the
+        <strong>Shared Prosperity Premium</strong>.
+      </p>
+    </div>
+
+    <div class="source">
+      Source: <a href="https://www.worldbank.org/en/topic/poverty/brief/global-database-of-shared-prosperity"
+        target="_blank">World Bank Global Database of Shared Prosperity</a>
+    </div>
+
+    <div class="chart-body">
+      <div id="scatterplot">
+        <svg id="scatter-svg" style="transition: transform 0.6s ease; transform-origin: 50% 50%;"></svg>
+        <div class="tooltip-box" id="tooltipBox"></div>
+      </div>
+
+      <div id="scroll-steps">
+        <div class="info-box" id="firstInfoBox">
+          <p>Each dot represents a country. </p>
+          <p><strong>X-axis</strong> shows <strong>income growth rates of the poorest 40% of the population in
+              countries</strong>, an indicator frequently used by the World Bank and the United Nations to assess
+            <strong>Inclusive Growth</strong> (Birdsall & Londoño, 1997).
+          </p>
+          <p><strong>Y-axis</strong> represents <strong>national average income growth rate</strong>, one of the
+            most commonly used indicators for measuring <strong>overall economic growth</strong>, particularly in
+            terms
+            of household income growth.</p>
+        </div>
+
+        <div class="info-box" id="secondInfoBox">
+          <p>It divides the countries based on the relationship between the income growth of the poorest
+            40% of the population and the average income growth rate of the entire population.</p>
+          <p><strong>The diagonal line (45-degree line)</strong> represents a scenario where the two growth rates
+            are
+            <strong>equal</strong>, which is considered <strong>an ideal state</strong> of inclusive growth.
+          </p>
+        </div>
+
+        <div class="info-box" id="thirdInfoBox">
+          <p><strong>On the right side:</strong> The income of the poorest 40% of the population <strong>grows
+              faster</strong> than the
+            overall income.</p>
+          <p><strong>On the left side:</strong> The income of low-income groups <strong>grows more slowly</strong>,
+            suggesting that
+            income inequality may be worsening.</p>
+          <p>Based on data from 90 economies between 2012 and 2017, 53 economies experienced <strong>positive Shared
+              Prosperity Premiums</strong>, where the income growth of the poorest 40% <strong>exceeded</strong> the
+            national average. </p>
+
+          <p> In contrast, the remaining countries showed <strong>negative Shared Prosperity Premiums</strong>,
+            indicating that income growth for low-income groups <strong>fell behind </strong>the overall level.</p>
+        </div>
+
+        <div class="info-box" id="fourthInfoBox">
+          <p>Among 15 countries in <strong>Sub-Saharan Africa</strong>, <strong>10</strong> provided data sufficient
+            to calculate the Shared Prosperity Premium. </p>
+
+          <p>In most of these countries, the income growth of the poorest 40%
+            <strong>lagged behind</strong> the overall growth (negative premium).
+          </p>
+
+        </div>
+
+        <div class="info-box" id="fifthInfoBox">
+          <p>Among <strong>4 South Asian</strong> economies with available Shared Prosperity Premium data, the
+            income
+            growth of the poorest 40% consistently <strong>lagged behind</strong> the overall growth (negative
+            premium).
+          </p>
+        </div>
+
+        <div class="info-box" id="sixthInfoBox">
+          <p>Among <strong>7</strong> economies in <strong>East Asia and the Pacific</strong> with sufficient data,
+            6
+            showed that the income growth rate of the poorest 40% exceeded the overall average (<strong>positive
+              premium</strong>).</p>
+          <p>It indicats that these countries have <strong>made positive progress </strong>in reducing inequality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <section id="conclusion">
+      <h2>Conclusion</h2>
+      <p>
+        This data visualization project is divided into 4 sections.
+        The first section presents the main GDP trade partners of each country in the form of an interactive map.
+        The second section displays the main export destinations of developing economies and the share of intra- and
+        extra-regional trade across the six continents.The third section focuses on the economic impact of the COVID-19
+        pandemic. It includes a bar graph showing the
+        trend in global gross domestic product over the past two decades. This section also includes line charts that
+        compare pre-pandemic economic estimates with the actual GDP outcomes of various countries. Several countries
+        with different economic structures were selected for in-depth analysis.The final section presents an interactive
+        scatter plot showing the Shared Prosperity Premium for 90 countries.
+        The visualization clearly reveals whether countries have achieved inclusive and equitable income growth.
+
+      </p>
+
+      <p>Future research could expand the scope to include more countries and incorporate a wider range of economic
+        indicators, such as employment conditions, inflation rates, fiscal balance, and poverty levels, to provide a
+        more comprehensive analysis.</p>
+    </section>
+
+
+  </div>
+
+
+  <!-- About us -->
+
+  <div id="about-us-wrapper">
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>
+        We are students from UCL's Centre for Advanced Spatial Analysis (CASA), specializing in urban spatial
+        science.
+        Our current project focuses on exploring the relationship between shared prosperity and global trade
+        networks,
+        using advanced data visualization, spatial analysis, and network modeling techniques.
+      </p>
+      <div class="team-container">
+        <div class="team-member">
+          <div class="image-container">
+            <img src="src/img/CHU.jpg" alt="Jize Chu">
+            <div class="social-overlay">
+              <a href="https://www.instagram.com/ethan_tiantian" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <h3>Jize Chu</h3>
+          <p>Art Director</p>
+        </div>
+
+        <div class="team-member">
+          <div class="image-container">
+            <img src="src/img/LIU.jpg" alt="Xinyang Liu">
+            <div class="social-overlay">
+              <a href="https://www.instagram.com/luxury_s817" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <h3>Xinyang Liu</h3>
+          <p>Technical Director</p>
+        </div>
+
+        <div class="team-member">
+          <div class="image-container">
+            <img src="src/img/ZHOU.jpg" alt="Siyao Zhou">
+            <div class="social-overlay">
+              <a href="https://www.instagram.com/zhouzhouwawi" target="_blank">Instagram</a>
+            </div>
+          </div>
+          <h3>Siyao Zhou</h3>
+          <p>Creative Director</p>
+        </div>
+      </div>
+
+      <p class="github-link">
+        For code and data behind this website, click
+        <a href="https://github.com/luxuryLIu/CASA0003_Group6" target="_blank">here</a> to visit the GitHub
+        Repository.
+      </p>
+    </section>
+  </div>
+
+
+  <div id="references-wrapper">
+    <h2>Reference</h2>
+    <ul class="references">
+      <li>[1]
+        <a href="https://www.ey.com/zh_cn/insights/global-trade" target="_blank">
+          <strong>Global Trade.</strong>
+        </a>
+      </li>
+      <li>[2] Ferreira, F. H., Galasso, E., & Negre, M. (2018).
+        <a href="https://doi.org/10.1093/acrefore/9780190625979.013.445" target="_blank">
+          <strong>Shared prosperity: concepts, data, and some policy examples (No. 11571).</strong>
+        </a>
+        IZA Discussion Papers.
+      </li>
+
+      <li>[3] Marmot, M., & Allen, J. (2020).
+        <a href="https://doi.org/10.1136/jech-2020-214720" target="_blank">
+          <strong>COVID-19: exposing and amplifying inequalities.</strong>
+        </a>
+        J Epidemiol Community Health, 74(9), 681-682.
+      </li>
+
+      <li>[4] Birdsall, N., & Londoño, J. L. (1997).
+        <a href="https://doi.org/10.18235/0010755" target="_blank">
+          <strong>Asset inequality matters: an assessment of the World Bank's approach to poverty
+            reduction.</strong>
+        </a>
+        The American Economic Review, 87(2), 32-37.
+      </li>
+
+      <li>[5] Video source：
+        <ul>
+          <li>
+            <a href="https://youtu.be/l2JMaJTFSvw?si=QSFyX9BP9fe23G2u" target="_blank">
+              <strong>Secrets Of The Marie Maersk Container Ship | Richard Hammond’s Big(YouTube)</strong>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=jIHzGD5mb5o&t=38s" target="_blank">
+              <strong>Why U.S. Ports Are Some Of The Least Efficient In The World（YouTube）</strong>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>[6] World Bank. (2022).
+        <a href=" " target="_blank">
+          <strong>Macro Poverty Outlook for Nicaragua: October 2022 (English).</strong>
+        </a>
+        Macro Poverty Outlook (MPO). Washington, D.C.: World Bank Group.
+      </li>
+
+      <li>[7] World Bank. (2022).
+        <a href="http://documents.worldbank.org/curated/en/099317110122223108" target="_blank">
+          <strong>Macro Poverty Outlook for Guyana: October 2022 (English).</strong>
+        </a>
+        Macro Poverty Outlook (MPO). Washington, D.C.: World Bank Group.
+      </li>
+
+
+    </ul>
+  </div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="src/js/Leaflet.PolylineDecorator-1.6.0/dist/leaflet.polylineDecorator.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
